@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>temka JS lr1-3</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <script>
+            function getCurrentTime() {
+                var now = new Date();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
+        
+                var TimeInput = document.getElementById("sec-hours");
+                TimeInput.value = hours + ":" + minutes + ":" + seconds;
+        }
+        </script>
+    </head>
+    <body>
+        <script src="mainJS.js"></script>
+
+        <div class="container-wrapper">
+            <fieldset style="width: 200px;">
+                Вывод времени
+                <button onclick="getCurrentTime();">Вывести время</button> <br>
+                <input id="sec-hours" type="text" value="" placeholder="sec-hours" />
+            </fieldset>
+            
+            <div id="polytech">Я учусь в политехе</div>
+            <br><br>
+
+            <fieldset style="width: 190px;">
+                Сортировка массива
+                <div>Массив до сортировки:</div>
+                <input id="before" type="text" />
+            
+                <div>Массив после сортировки:</div>
+                <input id="after" type="text" />
+                <br><br>
+            
+                <button onclick="sortArray()">Сортировать</button>
+            </fieldset>
+            <br>
+
+            <fieldset style="width: 440px;">
+                Расчёт по функции
+                <div>Значение выражения (sin(2*x) + 4*x^2)/cos(3*x) + pi/2 при x = 2:</div>
+	            <input type="text" id="result"><br><br>
+	            <button onclick="calculate()">Вычислить</button>
+            </fieldset>
+            <br>
+
+            <fieldset style="width: 480px;">
+                S1:   <input type="text" id="S1">
+                S2:   <input type="text" id="S2"><br><br>
+
+                Length of S2:   <input type="text" id="length"><br><br>
+                Does the string S1 include the word "лучший":   <input type="text" id="contains1"><br><br>
+                Does the string S2 include the word "лучший":   <input type="text" id="contains2"><br><br>
+                18th character of S2:   <input type="text" id="char18"><br><br>
+                ASCII code of 18th character of S2:   <input type="text" id="ascii"><br><br>
+
+                <button onclick="process()">Обработать</button>
+            </fieldset>
+        </div>
+
+        <script>
+            //var polytechId = "polytech";
+            //var polytechEl = document.getElementById(polytechId);
+
+            //for (let i = 0; i < 11; i++) {
+                //window.alert(polytechEl.innerHTML);
+            //} 
+
+            var numbers = [10, 5, 8, 1, 6, 9, 3, 2, 7, 4];
+
+            function sortArray() {
+                document.getElementById("before").value = numbers;
+                numbers.sort(function(a, b) {
+                    return a - b
+                });
+                document.getElementById("after").value = numbers;
+            }
+            
+        </script>
+
+    </body>
+</html>

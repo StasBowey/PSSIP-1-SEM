@@ -1,0 +1,6 @@
+body {
+	background-color: red; /*фоновый цвет красны*/
+	font-family: "Arial"; /*шрифт ариал*/
+	font-size: 10pt; /*размер шрифта 10*/
+	color: blue; /*цвет текста синий*/
+}

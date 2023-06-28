@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>1 lab. work JS</title>
+	</head>
+	<body style="background-color: rgb(185, 166, 144);">
+        <script src="main.js"></script>
+
+        <input value="Stas" id="name" />
+        <input value="Shestakovich" id="surname" />
+        <input value="PZT-36" id="kurs-group" />
+
+        <input value="PSSIP" id="name-lesson" />
+        <textarea id="hobbies">
+            HTML, CSS, JS
+        </textarea>
+        <br><br>
+        <img src="1.jpg" alt="anime" title="anime-jpg" width="800px"> 
+
+        <div>
+            a = <input id="a" type="text" value="" /><br>
+            b = <input id="b" type="text" value="" /><br><br>
+            <input type="button" value="SumZ" onclick="addition();" /><br>
+        </div>
+          <div id="result"></div>
+          
+
+        <script>
+
+            var lessonId = "name-lesson";
+            var lessonEl = document.getElementById(lessonId);
+            var hobbiesId = "hobbies";
+            var hobbiesEl = document.getElementById(hobbiesId);
+
+            window.alert(hobbiesEl.innerHTML);
+            window.alert(lessonEl.value);
+            
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,74 @@
+body {
+	background-image: url("1.jpg");
+	font-family: "Times New Roman";
+	font-size: 11pt;
+}
+.class {
+	text-align: justify;
+}
+.group {
+	color: orange;
+}
+.kurs {
+	text-align: center;
+	text-decoration: underline;
+}
+.hob {
+	text-align: right;
+	font-weight: bold;
+	font-style: italic;
+}
+ol {
+	color: #fff;
+}
+img {
+	width: 40%;
+	border: 2px solid black;
+	border-radius: 100px;
+	box-shadow: 40px 0px 50px #000000;
+	transition: 3s all;
+}
+figcaption {
+	font-weight: bold;
+	font-size: 20pt;
+}
+img:hover {
+	transform: scale(1.2);
+}
+a {
+	color: black;
+	font-weight: bold;
+}
+a:hover {
+	color: white;
+}
+table {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+td {
+	border: 1px solid black;
+}
+#pusto {
+	background-color: pink;
+}
+#odin {
+	background-color: white;
+}
+#tri {
+	background-color: green;
+}
+#chetire {
+	background-color: white;
+}
+#pyat {
+	background-color: red;
+}
+.avtor {
+	border: 3px solid black;
+	margin-right: 1190px;
+	padding-left: 10px;
+}
+
+
+
